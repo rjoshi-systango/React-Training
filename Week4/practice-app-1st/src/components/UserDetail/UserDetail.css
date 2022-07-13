@@ -1,0 +1,7 @@
+.list-content {
+    border: solid 1px black;
+    margin: 10px;
+    padding-left: 15px  ;
+    display: flex;
+    justify-content: left;
+}

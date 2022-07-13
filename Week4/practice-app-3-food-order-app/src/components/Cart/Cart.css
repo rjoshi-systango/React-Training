@@ -1,0 +1,15 @@
+.cart {
+    margin:  auto;
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    background-color: white;
+    position: absolute;
+    z-index: 3;
+}
+
+.cart-item {
+    display: flex;
+    flex-direction: row;
+}
