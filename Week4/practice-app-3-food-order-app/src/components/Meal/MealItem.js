@@ -34,23 +34,27 @@ const MealItem = (props) => {
 
 
     return (
-        <div className="item-container">
-            <div className="meal-list-item-left-area">
-                <div>{props.item.title}</div>
-                <div>{props.item.message}</div>
-                <div>${props.item.amount}</div>
-            </div>
+        <>
+            <div className="item-container">
+                <div className="meal-list-item-left-area">
+                    <div className="meal-list-item-left-area-content">{props.item.title}</div>
+                    <div className="meal-list-item-left-area-content message">{props.item.message}</div>
+                    <div className="meal-list-item-left-area-content">$<b>{props.item.amount}</b></div>
+                </div>
 
-            <div className="meal-list-item-right-area">
-                <div>
-                    <label>Quantity</label>
-                    <input type="number"  min="1" max="5" value={mealQuantity} onChange={quantityChangeHandler}/>
-                </div>
-                <div>
-                    <button onClick={addClickHandler} >+Add</button>
+                <div className="meal-list-item-right-area">
+                    <div className="quantity-area">
+                        <label>Quantity</label>
+                        <input type="number"  min="1" max="5" value={mealQuantity} onChange={quantityChangeHandler}/>
+                    </div>
+                    <div>
+                        <button className="quantity-add-btn" onClick={addClickHandler} >+Add</button>
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
+
+        
     );
 }
 

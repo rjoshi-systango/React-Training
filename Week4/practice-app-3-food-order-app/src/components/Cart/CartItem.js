@@ -18,23 +18,32 @@ const CartItem = (props) => {
     }
 
     return (
-        <div className="cart-item-container">
+        <>
+            {/* <div className="backddrop"></div> */}
+            <div className="cart-item-container">
             <div className="meal-list-item-left-area">
-                <div>{props.mealInformation.title}</div>
-                <div>{props.mealInformation.quantity}</div>
-                <div>${props.mealInformation.amount}</div>
+                <div className="meal-list-item-left-area-content"> {props.mealInformation.title} </div>
+                
+                <div className="meal-list-item-left-area-content"> ${props.mealInformation.amount} </div>
+            </div>
+
+            <div className="meal-list-item-middle-area">
+                <div>x{props.mealInformation.quantity}</div>
             </div>
 
             <div className="meal-list-item-right-area">
-                <div>
-                    <button onClick={subtractClickHandler} >-</button>
+                <div >
+                    <button onClick={subtractClickHandler} className="meal-list-item-right-area-content">-</button>
                 </div>
              
-                <div>
-                    <button onClick={addClickHandler} >+</button>
+                <div >
+                    <button onClick={addClickHandler} className="meal-list-item-right-area-content">+</button>
                 </div>
             </div>
         </div>
+        <hr></hr>
+        </>
+        
     );
 }
 

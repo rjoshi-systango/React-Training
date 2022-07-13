@@ -12,3 +12,26 @@
     flex-direction: column;
     
 }
+
+.quantity-add-btn {
+    color: white;
+    background-color: brown;
+}
+
+.quantity-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.quantity-area label {
+    margin: 10px;   
+}
+
+.meal-list-item-left-area-content {
+    margin: 5px;
+}
+
+.message {
+    color: grey;
+}

@@ -8,7 +8,7 @@ import "./Cart.css";
 
 const Cart = () => {
 
-    const {cartItemList} = useContext(MealListContext);
+    const { cartItemList } = useContext(MealListContext);
 
     let totalAmount = 0;
 
@@ -21,18 +21,22 @@ const Cart = () => {
     console.log(cartItemList);
 
     return (
-        <div className="cart">
-           {cartItemList.map((item) => {    
-               if(item.quantity > 0) {
-                return <CartItem mealInformation={item} key={item.id} onChangeMealQuantity={changeMealQuantity} /> 
-               }
-               
-           })}
-           <div>
-               <p>Total Amount</p>
-               <span>${totalAmount.toFixed(2)}</span>
-           </div>
-        </div>
+        <>
+        <div className="backdrop"></div>
+            <div className="cart-area">
+                {cartItemList.map((item) => {
+                    if (item.quantity > 0) {
+                        return <CartItem mealInformation={item} key={item.id} onChangeMealQuantity={changeMealQuantity} />
+                    }
+
+                })}
+                <div>
+                    <p>Total Amount</p>
+                    <span>${totalAmount.toFixed(2)}</span>
+                </div>
+            </div>
+        </>
+
     );
 }
 
