@@ -1,0 +1,93 @@
+.header {
+    /* position: absolute; */
+    background-color: #8a2b06;
+    top: 0;
+    left: 0;
+    width: 100vw ;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.react-meals {
+    color: white;
+    width: fit-content;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.cart {
+    right: 0px;
+}
+
+
+.cart-btn {
+    height: 30px;
+			width: 250px;
+			background-color: rgba(0,0,0,0.4);
+			border-radius: 15px;
+			align-self: center;
+
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+}
+
+
+.cart-btn-text {
+    align-self: center;
+    color : white;
+}
+
+/*  */
+
+.cart-btn-quantity {
+    background-color: brown;
+    border-radius: 20px;
+    margin-left: 10px;
+    align-self: center
+}
+
+.cart-btn-quantity-child { 
+    color: white;
+    font-family: arial;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 3px; 
+}
+
+
+#shopping-cart-button{
+    height: 30px;
+    width: 250px;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 15px;
+    align-self: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#cart-text{
+    align-self: center
+}
+
+#cart-text pre{
+    color: white;
+    font-family: arial;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0px;
+}
+
+#cart-quantity{
+    background-color: brown;
+    border-radius: 20px;
+    margin-left: 10px;
+    align-self: center
+}
+
+#cart-quantity pre{
+   
+}
